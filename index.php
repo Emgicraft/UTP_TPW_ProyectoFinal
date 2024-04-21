@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>MENÚ PRINCIPAL</title>
+	<title>Sistema de Ventas</title>
 </head>
 <body>
 	<h1>MENÚ PRINCIPAL</h1><hr>
