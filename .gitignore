@@ -1,0 +1,21 @@
+# Ignorar archivos y directorios de Sublime Text
+.vscode/
+.sublime/
+
+# Ignorar archivos de respaldo
+*~
+
+# Ignorar archivos generados por el sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos multimedia pesados
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.mp3
+*.mp4
+
+# Ignorar archivos de configuración específicos de PHP
+php.ini
