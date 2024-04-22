@@ -1,0 +1,40 @@
+header, footer {
+	background-color: #0A152F;
+	padding: 20px 10px;
+}
+
+footer {
+	text-decoration: none;
+	color: #B5FF59;
+}
+
+.cabezaWeb {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	/*margin-bottom: 20px;*/
+}
+
+.barraDeNavegacion {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.barraDeNavegacion a {
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #B5FF59;
+	font-weight: bold;
+}
+
+.barraDeNavegacion a:hover {
+	/*text-decoration: none;*/
+	color: black;
+	background-color: #F0FF59;
+}
+
+.derechoCopy {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+}
