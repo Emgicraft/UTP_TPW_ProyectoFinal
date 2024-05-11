@@ -11,5 +11,17 @@
 	<a href="cliente">Cliente</a>
 	<a href="producto">Producto</a>
 	<a href="ventas">Ventas</a>
+
+
+	<img width="100%" src="banner/banner.jpg">
+
+
+	<!-- Pie de pagina -->
+
+	<footer align="center">
+	<img src="imagenes/PiePAgina.jpg">
+	<p>&copy Copyright CATmigos - 2024</p>
+	</footer>
+
 </body>
 </html>
