@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
+
+
 </head>
 
 <body>
@@ -22,6 +24,10 @@
 
 			<nav>
 				<ul>
+					<li><a href="cliente">Cliente</a></li>
+					<li><a href="producto">Producto</a></li>
+					<li><a href="ventas">Ventas</a></li>
+
 					<li><a href="cliente">Cliente</a></li>
 					<li><a href="producto">Producto</a></li>
 					<li><a href="ventas">Ventas</a></li>
