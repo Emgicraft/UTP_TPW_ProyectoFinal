@@ -1,0 +1,28 @@
+body {
+    background: radial-gradient(circle, #004D77, #75CEFF);
+}
+
+main {
+    background-color: #1F1F1F;
+    text-decoration: none;
+    color: aquamarine;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-style: solid;
+    border-right-width: 10px;
+    border-left-width: 10px;
+    border-color: #0A152F;
+    padding: 10px 10px 10px 10px;
+}
+
+#indice_contenido {
+    display: flex;
+}
+
+#mapa-contenido {
+    text-align: center;
+}
+
+#difVideoYT {
+    text-align: center;
+}
