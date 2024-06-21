@@ -5,6 +5,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Producto</title>
+	<style>
+		table {
+			border: solid;
+		}
+	</style>
 	<script type="text/javascript">
 		function confirmar(ruta) {
 			var r = confirm("¿Está seguro que desea continuar?");
@@ -68,12 +73,14 @@
 	</form>
 	<br>
 
-	<table border=1>
+	<table>
 		<tr>
-			<th>Código</th>
+			<th>ID</th>
+			<th>Código de inventario</th>
 			<th>Descripción</th>
 			<th>Categoría</th>
 			<th>Precio S/.</th>
+			<th>Stock</th>
 		</tr>
 
 		<?php
@@ -81,12 +88,14 @@
 		?>
 
 			<tr>
-				<td><?php echo $registro["id"]; ?></td>
-				<td><?php echo $registro["descripcion"]; ?></td>
-				<td><?php echo $registro["categoria"]; ?></td>
-				<td><?php echo $registro["precio"]; ?></td>
-				<td><a href="<?php echo 'editar_producto.php?codProd=' . $registro['id']; ?>">Editar</a></td>
-				<td><a href="javascript:confirmar('eliminar_producto.php?codProd=<?php echo $registro["id"]; ?>')">Eliminar</a></td>
+				<td><?php echo $registro["ID_Producto"]; ?></td>
+				<td><?php echo $registro["Codigo_inventario"]; ?></td>
+				<td><?php echo $registro["Descripcion"]; ?></td>
+				<td><?php echo $registro["Categoria_ID"]; ?></td>
+				<td><?php echo $registro["Precio"]; ?></td>
+				<td><?php echo $registro["Stock"]; ?></td>
+				<td><a href="<?php echo 'editar_producto.php?codProd=' . $registro['ID_Producto']; ?>">Editar</a></td>
+				<td><a href="javascript:confirmar('eliminar_producto.php?codProd=<?php echo $registro["ID_Producto"]; ?>')">Eliminar</a></td>
 			</tr>
 
 		<?php
