@@ -30,7 +30,7 @@ CREATE TABLE CATEGORIA (
 -- Crear tabla PRODUCTO
 CREATE TABLE PRODUCTO (
     ID_Producto INT AUTO_INCREMENT PRIMARY KEY,
-    Codigo_inventario VARCHAR(8),
+    Codigo_inventario VARCHAR(12),
     Descripcion VARCHAR(100) NOT NULL,
     Categoria_ID INT,
     Precio DECIMAL(11,2) NOT NULL,

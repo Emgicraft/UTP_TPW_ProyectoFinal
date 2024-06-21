@@ -6,10 +6,12 @@
 	<title>MENÚ PRINCIPAL</title>
 </head>
 <body>
-	<h1>MENÚ PRINCIPAL</h1><hr>
-	
-	<a href="cliente">Cliente</a>
-	<a href="producto">Producto</a>
-	<a href="ventas">Ventas</a>
+	<h1>MENÚ PRINCIPAL</h1>
+	<hr>
+	<nav>
+		<a href="cliente">Cliente</a>
+		<a href="producto">Producto</a>
+		<a href="ventas">Ventas</a>
+	</nav>
 </body>
 </html>
