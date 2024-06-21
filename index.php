@@ -14,7 +14,7 @@
     <header class=cabezaWeb>
         <div>
             <!-- <img src="media/Logo_MaghTech.png" alt="Logo_MaghTech" width="100px"> -->
-            <img src="imagenes/logo.png" alt="Logo_MaghTech" width="100px">
+            <img src="https://imgur.com/d3V0t5C.png" alt="Logo_MaghTech" width="100px">
         </div>
         <nav class="barraDeNavegacion">
             <a href="cliente">Clientes</a>
@@ -76,7 +76,7 @@
     <!-- Pie de pagina -->
     <footer>
         <div class="derechoCopy">
-            <img src="imagenes/PiePAgina.png" width="7%">
+            <img src="https://imgur.com/ezWpziN.png" width="7%">
             <p>&copy Copyright Sabor&Frescura - 2024</p>
         </div>
     </footer>
