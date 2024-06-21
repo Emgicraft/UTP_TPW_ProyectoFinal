@@ -15,8 +15,31 @@ main {
     padding: 10px 10px 10px 10px;
 }
 
+
+.principal {
+    width: auto;
+    margin: 0 auto;
+}
+
+.corte {
+    float: left;
+    margin: 0 20px 20px 0;
+    box-shadow: 5px 5px 10px 10px #000000;
+    /*margin arriba derecha abajo izquierda*/
+}
+
+
+.principal p {
+    line-height: 2;
+    /*interlineado*/
+}
+
 #indice_contenido {
     display: flex;
+    width: auto;
+    margin: 0 auto;
+    line-height: 1.5;
+    /*interlineado*/
 }
 
 #mapa-contenido {
