@@ -1,0 +1,23 @@
+:root {
+    /* CSS HEX */
+    --umber: #59473c;
+    --buff: #C8997C;
+    --rust: #B84122;
+    --beaver: #887668;
+    --tea-rose-red: #F3C6BE;
+    --coral-pink: #DB7E72;
+    --bistre: #3B2F1E;
+    --brown-sugar: #B47465;
+    --field-drab: #68603E;
+    
+    /* SCSS Gradient */
+    --gradient-top: linear-gradient(0deg, #59473Cff, #C8997Cff, #B84122ff, #887668ff, #F3C6BEff, #DB7E72ff, #3B2F1Eff, #B47465ff, #68603Eff);
+    --gradient-right: linear-gradient(90deg, #59473Cff, #C8997Cff, #B84122ff, #887668ff, #F3C6BEff, #DB7E72ff, #3B2F1Eff, #B47465ff, #68603Eff);
+    --gradient-bottom: linear-gradient(180deg, #59473Cff, #C8997Cff, #B84122ff, #887668ff, #F3C6BEff, #DB7E72ff, #3B2F1Eff, #B47465ff, #68603Eff);
+    --gradient-left: linear-gradient(270deg, #59473Cff, #C8997Cff, #B84122ff, #887668ff, #F3C6BEff, #DB7E72ff, #3B2F1Eff, #B47465ff, #68603Eff);
+    --gradient-top-right: linear-gradient(45deg, #59473Cff, #C8997Cff, #B84122ff, #887668ff, #F3C6BEff, #DB7E72ff, #3B2F1Eff, #B47465ff, #68603Eff);
+    --gradient-bottom-right: linear-gradient(135deg, #59473Cff, #C8997Cff, #B84122ff, #887668ff, #F3C6BEff, #DB7E72ff, #3B2F1Eff, #B47465ff, #68603Eff);
+    --gradient-top-left: linear-gradient(225deg, #59473Cff, #C8997Cff, #B84122ff, #887668ff, #F3C6BEff, #DB7E72ff, #3B2F1Eff, #B47465ff, #68603Eff);
+    --gradient-bottom-left: linear-gradient(315deg, #59473Cff, #C8997Cff, #B84122ff, #887668ff, #F3C6BEff, #DB7E72ff, #3B2F1Eff, #B47465ff, #68603Eff);
+    --gradient-radial: radial-gradient(#59473Cff, #C8997Cff, #B84122ff, #887668ff, #F3C6BEff, #DB7E72ff, #3B2F1Eff, #B47465ff, #68603Eff);
+}
