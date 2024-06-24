@@ -30,18 +30,17 @@
 
         <div id="indice_contenido">
             <div class="indice" style="margin-right: 20px;">
-                <h4>Contenido</h4>
+                <h2>Contenido</h2>
                 <ol>
-                    <li>Clientes</li>
-                    <li>Productos</li>
-                    <li>Ventas</li>
-                    <li>Reportar</li>
+                    <li><a href="#Sabor_y_Frescura">Sabor&Frescura</a></li>
+                    <li><a href="">Nuestra Ubicación</a></li>
+                    <li><a href="">Nuestros Productos</a></li>
                 </ol>
             </div>
         </div>
         <div>
             <article class="principal">
-                <h1>Sabor&Frescura</h1>
+                <h2 id="Sabor_y_Frescura">Sabor&Frescura</h2>
                 <hr>
                 <!-- <img id="carne_cocinada" width="35%" src="media/carne_cocinada_banner.jpg" alt="Corte de carne cocinado."> -->
                 <img class="corte" id="carne_cocinada" width="35%" src="https://i.imgur.com/OADKXGi.jpg" alt="Corte de carne cocinado.">
@@ -49,16 +48,14 @@
                 <p id="mision"><em>Nuestra misión es: <strong>"Brindar productos frescos y de calidad para satisfacer las necesidades de nuestros clientes".</strong></em></p>
                 <p>Ofrecemos una amplia variedad de embutidos y productos de abarrotes, seleccionados con cuidado para garantizar la frescura y calidad que nuestros clientes merecen. Nuestro equipo está compuesto por profesionales experimentados que están siempre atentos a las últimas tendencias en productos y preferencias del cliente. Nuestro servicio se caracteriza por su excelencia y eficiencia, asegurando la satisfacción de nuestros clientes en cada visita.</p>
             </article>
-
         </div>
         </div>
 
         <hr>
-        <br></br>
+        <br>
 
         <section id="mapa">
-            <h3>Nuestra Ubicación</h3>
-            <p>Nuestro establecimiento esta ubicado en el corazón de la ciudad.</p>
+            <h2>Ubicanos</h2>
             <br></br>
 
             <div id="mapa-contenido">
@@ -67,6 +64,7 @@
         </section>
         <br></br>
         <section id="diferenciales">
+            <h2>Nuestros Productos</h2>
             <div id="difVideoYT">
                 <iframe width="720px" height="480px" src="https://www.youtube.com/embed/ARHXAj-n18Q?si=wDvGsMQWY47u4p8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>

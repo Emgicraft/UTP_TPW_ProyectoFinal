@@ -5,6 +5,17 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Cliente</title>
+	<style>
+		table {
+			border: 1px solid black; /* Borde de 1px de grosor, sólido y negro */
+			border-collapse: collapse; /* Para que los bordes de las celdas se fusionen */
+    	}
+
+		th, td {
+			border: 1px solid black; /* Borde de las celdas */
+			padding: 8px; /* Espaciado interno para que no queden pegadas al borde */
+		}
+	</style>
 	<script type="text/javascript">
 		function confirmar(ruta) {
 			var r = confirm("¿Está seguro que desea continuar?");
@@ -14,16 +25,14 @@
 </head>
 
 <body>
-	<h1>Cliente</h1><br>
+	<h1>Cliente</h1>
+	
+	<br>
 
-	<table>
-		<tr>
-			<td><a href="..\">Retornar</a></td>
-		</tr>
-		<tr>
-			<td><a href="agregar_cliente.php">Agregar un nuevo cliente</a></td>
-		</tr>
-	</table>
+	<nav>
+		<a href="../">Retornar</a>
+		<a href="agregar_cliente.php">Agregar un nuevo cliente</a>
+	</nav>
 
 	<hr>
 
@@ -46,22 +55,22 @@
 			// Preparar la sentencia SQL:
 			switch ($filtro) {
 				case 'id':
-					$sentencia = $cnx->prepare("SELECT * FROM cliente WHERE id LIKE CONCAT('%', :vlr, '%');");
+					$sentencia = $cnx->prepare("SELECT * FROM Cliente WHERE ID_Cliente LIKE CONCAT('%', :vlr, '%');");
 					break;
 				case 'nombre':
-					$sentencia = $cnx->prepare("SELECT * FROM cliente WHERE nombre LIKE CONCAT('%', :vlr, '%');");
+					$sentencia = $cnx->prepare("SELECT * FROM Cliente WHERE Nombre LIKE CONCAT('%', :vlr, '%');");
 					break;
 				case 'numruc':
-					$sentencia = $cnx->prepare("SELECT * FROM cliente WHERE numruc LIKE CONCAT('%', :vlr, '%');");
+					$sentencia = $cnx->prepare("SELECT * FROM Cliente WHERE NumRuc LIKE CONCAT('%', :vlr, '%');");
 					break;
 				case 'direccion':
-					$sentencia = $cnx->prepare("SELECT * FROM cliente WHERE direccion LIKE CONCAT('%', :vlr, '%');");
+					$sentencia = $cnx->prepare("SELECT * FROM Cliente WHERE Direccion LIKE CONCAT('%', :vlr, '%');");
 					break;
 				case 'telefono':
-					$sentencia = $cnx->prepare("SELECT * FROM cliente WHERE telefono LIKE CONCAT('%', :vlr, '%');");
+					$sentencia = $cnx->prepare("SELECT * FROM Cliente WHERE Telefono LIKE CONCAT('%', :vlr, '%');");
 					break;
 				default:
-					$sentencia = $cnx->prepare("SELECT * FROM cliente WHERE nombre LIKE CONCAT('%', :vlr, '%');");
+					$sentencia = $cnx->prepare("SELECT * FROM Cliente WHERE Nombre LIKE CONCAT('%', :vlr, '%');");
 					break;
 			}
 

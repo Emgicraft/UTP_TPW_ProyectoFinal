@@ -7,7 +7,13 @@
 	<title>Producto</title>
 	<style>
 		table {
-			border: solid;
+			border: 1px solid black; /* Borde de 1px de grosor, sólido y negro */
+			border-collapse: collapse; /* Para que los bordes de las celdas se fusionen */
+    	}
+
+		th, td {
+			border: 1px solid black; /* Borde de las celdas */
+			padding: 8px; /* Espaciado interno para que no queden pegadas al borde */
 		}
 	</style>
 	<script type="text/javascript">
@@ -19,16 +25,12 @@
 </head>
 
 <body>
-	<h1>Producto</h1><br>
-
-	<table>
-		<tr>
-			<td><a href="..\">Retornar</a></td>
-		</tr>
-		<tr>
-			<td><a href="agregar_producto.php">Agregar un nuevo producto</a></td>
-		</tr>
-	</table>
+	<h1>Producto</h1>
+	
+	<nav>
+		<a href="../">Retornar</a>
+		<a href="agregar_producto.php">Agregar un nuevo producto</a>
+	</nav>
 
 	<hr>
 
