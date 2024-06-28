@@ -3,10 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	<title>Agregar nuevo cliente</title>
 </head>
 <body>
-	<h1>Nuevo Cliente</h1><br>
+	<header>
+		<h1><i class='bx bxs-user'></i>Nuevo Cliente</h1>
+	</header>
 
 	<?php
 		if (isset($_GET["txtID"])) {
@@ -58,40 +62,31 @@
 		}
 	?>
 
-	<a href="agregar_cliente.php">Nuevo</a><br>
-
-	<form>
-		<table>
-			<tr>
-				<td><label>Código:</label></td>
-				<td><input type="text" name="txtID" size="6" value=<?php echo $id ?> readonly></td>
-			</tr>
+	<main>
+		<div class="contenedor contenedorADD">
+			<form class="formADD">
+				<label>ID:</label>
+				<input class="inputADD" type="text" name="txtID" size="6" value=<?php echo $id ?> readonly disabled>
 				<!-- Se pone 'name' a las etiquetas que enviaré. -->
-			<tr>
-				<td><label>Nombre:</label></td>
-				<td><input type="text" name="txtNombre" size="50" value="<?php echo $nombre ?>"></td>
-			</tr>
-
-			<tr>
-				<td><label>RUC:</label></td>
-				<td><input type="text" name="txtNumRUC" size="20" value="<?php echo $ruc ?>"></td>
-			</tr>
-
-			<tr>
-				<td><label>Dirección</label></td>
-				<td><input type="text" name="txtDirec" size="70" value=<?php echo $dir ?>></td>
-			</tr>
-
-			<tr>
-				<td><label>Teléfono</label></td>
-				<td><input type="text" name="txtTlf" size="20" value=<?php echo $tlf ?>></td>
-			</tr>
-
-			<tr>
-				<td><a href="index.php">Retornar</a></td>
-				<td><input type="submit" value="Guardar"></td>
-			</tr>
-		</table>
-	</form>
+				<label>Nombre:</label>
+				<input class="inputADD" type="text" name="txtNombre" size="50" value="<?php echo $nombre ?>">
+				
+				<label>RUC:</label>
+				<input class="inputADD" type="text" name="txtNumRUC" size="20" value="<?php echo $ruc ?>">
+				
+				<label>Dirección</label>
+				<input class="inputADD" type="text" name="txtDirec" size="70" value=<?php echo $dir ?>>
+				
+				<label>Teléfono</label>
+				<input class="inputADD" type="text" name="txtTlf" size="20" value=<?php echo $tlf ?>>
+				
+				<input class="inputADD" type="submit" value="Guardar">
+			</form>
+		</div>
+		<div class="contenedor contenedorADD">
+			<a href="index.php"><div class="contenedor__enlaces">Retornar</div></a>
+			<a href="agregar_cliente.php"><div class="contenedor__enlaces">Nuevo</div></a>
+		</div>
+	</main>
 </body>
 </html>

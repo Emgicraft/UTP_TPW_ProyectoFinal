@@ -3,10 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	<title>Editar cliente</title>
 </head>
 <body>
-	<h1>Editar Cliente</h1><br>
+	<header>
+		<i class='bx bxs-user'></i><h1>Editar Cliente</h1>
+	</header>
 	
 	<?php
 		if (isset($_GET["codCliente"])) {
@@ -16,7 +20,7 @@
 			require_once "../config/conexion.php";
 
 			// Preparamos la sentencia SQL:
-			$sentencia = $cnx->prepare("SELECT * FROM cliente WHERE id=:codC;");
+			$sentencia = $cnx->prepare("SELECT * FROM Cliente WHERE ID_Cliente=:codC;");
 
 			// Pasamos los parámetros SQL:
 			$sentencia->bindvalue(":codC", $idC);
@@ -44,7 +48,7 @@
 			require_once "../config/conexion.php";
 
 			// Preparamos la sentencia SQL:
-			$sentencia = $cnx->prepare("UPDATE cliente SET nombre=:nombre, numruc=:numruc, direccion=:drc, telefono=:telefono WHERE id=:codClt;");
+			$sentencia = $cnx->prepare("UPDATE Cliente SET Nombre=:nombre, NumRuc=:numruc, Direccion=:drc, Telefono=:telefono WHERE ID_Cliente=:codClt;");
 
 			// Pasamos los parámetros SQL:
 			$sentencia->bindvalue(":codClt", $idC);
@@ -67,39 +71,30 @@
 		}
 		
 	?>
-	
-	<form>
-		<table>
-			<tr>
-				<td><label>Código:</label></td>
-				<td><input type="text" name="txtID" size="6" value=<?php echo $idC ?> readonly></td>
-			</tr>
-				<!-- Se pone 'name' a las etiquetas que enviaré. -->
-			<tr>
-				<td><label>Nombre:</label></td>
-				<td><input type="text" name="txtNombre" size="50" value="<?php echo $nombre ?>"></td>
-			</tr>
+	<main>
+		<div class="contenedor contenedorADD">
+			<form class="formADD">
+				<label>Código:</label>
+				<input class="inputADD" type="text" name="txtID" size="6" value=<?php echo $idC ?> readonly disabled>
+				
+				<label>Nombre:</label>
+				<input class="inputADD" type="text" name="txtNombre" size="50" value="<?php echo $nombre ?>"></td>
+				
+				<label>Número RUC:</label>
+				<input class="inputADD" type="text" name="txtNumRUC" size="12" value=<?php echo $numRUC ?>></td>
+				
+				<label>Dirección:</label>
+				<input class="inputADD" type="text" name="txtDirec" size="12" value=<?php echo $direc ?>></td>
+				
+				<label>Teléfono:</label>
+				<input class="inputADD" type="text" name="txtTelefono" size="12" value=<?php echo $tlfn ?>></td>
 
-			<tr>
-				<td><label>Número RUC:</label></td>
-				<td><input type="text" name="txtNumRUC" size="12" value=<?php echo $numRUC ?>></td>
-			</tr>
-
-			<tr>
-				<td><label>Dirección:</label></td>
-				<td><input type="text" name="txtDirec" size="12" value=<?php echo $direc ?>></td>
-			</tr>
-
-			<tr>
-				<td><label>Teléfono:</label></td>
-				<td><input type="text" name="txtTelefono" size="12" value=<?php echo $tlfn ?>></td>
-			</tr>
-
-			<tr>
-				<td><a href="index.php">Retornar</a></td>
-				<td><input type="submit" value="Guardar"></td>
-			</tr>
-		</table>
-	</form>
+				<input class="inputADD" type="submit" value="Guardar">
+			</form>
+		</div>
+		<div class="contenedor contenedorADD">
+			<a href="index.php"><div class="contenedor__enlaces">Retornar</div></a>
+		</div>
+	</main>
 </body>
 </html>
