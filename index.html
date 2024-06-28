@@ -4,36 +4,84 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>MENÚ PRINCIPAL</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="estilos/cabecera.css">
+	<link rel="stylesheet" href="estilos/principal.css">
+	<link rel="stylesheet" href="estilos/pie.css">
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-	<header>
-		<h1><i class='bx bxs-store'></i>MARKET</h1>
-		<hr>
-		<nav class="contenedor">
-			<a href="cliente">
-				<div class="contenedor__enlaces">
-					<i class='bx bxs-user bx-flashing'></i>Cliente
-				</div>
-			</a>
-			<a href="producto">
-				<div class="contenedor__enlaces">
-					<i class='bx bx-cart-alt bx-fade-left'></i>Producto
-				</div>
-			</a>
-			<a href="ventas">
-				<div class="contenedor__enlaces">
-					<i class='bx bx-money bx-tada'></i>Ventas
-				</div>
-			</a>
-		</nav>
-	</header>
-	<main>
-		HOLA
-	</main>
-	<footer>
-		Autor: Moises Anderson Garcia Hidalgo
-	</footer>
+<header>
+	<h1><i class='bx bxs-store-alt'></i>MARKET</h1>
+	<hr>
+	<nav>
+		<a href="cliente">
+			<div class="contenedor__enlaces">
+				<i class='bx bxs-user bx-flashing'></i>Cliente
+			</div>
+		</a>
+		<a href="producto">
+			<div class="contenedor__enlaces">
+				<i class='bx bx-cart-alt bx-fade-left'></i>Producto
+			</div>
+		</a>
+		<a href="ventas">
+			<div class="contenedor__enlaces">
+				<i class='bx bx-money bx-tada'></i>Ventas
+			</div>
+		</a>
+	</nav>
+</header>
+<main>
+	<!-- <img id="imgBanner" width="100%" src="media/embutidos_banner.jpg" alt="Todo tipo de embutidos."> -->
+	<img id="imgBanner" width="100%" src="https://i.imgur.com/z7Kbu4I.jpg" alt="Todo tipo de embutidos.">
+
+	<div id="indice_contenido">
+		<div class="indice" style="margin-right: 20px;">
+			<h2>Contenido</h2>
+			<ol>
+				<li><a href="#Sabor_y_Frescura">Sabor&Frescura</a></li>
+				<li><a href="">Nuestra Ubicación</a></li>
+				<li><a href="">Nuestros Productos</a></li>
+			</ol>
+		</div>
+	</div>
+
+	<div>
+		<article class="principal">
+			<h2 id="Sabor_y_Frescura">Sabor&Frescura</h2>
+			<hr>
+			<!-- <img id="carne_cocinada" width="35%" src="media/carne_cocinada_banner.jpg" alt="Corte de carne cocinado."> -->
+			<img class="corte" id="carne_cocinada" width="35%" src="https://i.imgur.com/OADKXGi.jpg" alt="Corte de carne cocinado.">
+			<p>Ubicada en el corazón de la ciudad, minimarkt <strong>Sabor&Frescura</strong> trae para el mercado lo mejor en embutidos y abarrotes. Fundada en 2020, la Carnicería Sabor&Frescura ya es un referente en la ciudad y atrae nuevos clientes diariamente.</p>
+			<p id="mision"><em>Nuestra misión es: <strong>"Brindar productos frescos y de calidad para satisfacer las necesidades de nuestros clientes".</strong></em></p>
+			<p>Ofrecemos una amplia variedad de embutidos y productos de abarrotes, seleccionados con cuidado para garantizar la frescura y calidad que nuestros clientes merecen. Nuestro equipo está compuesto por profesionales experimentados que están siempre atentos a las últimas tendencias en productos y preferencias del cliente. Nuestro servicio se caracteriza por su excelencia y eficiencia, asegurando la satisfacción de nuestros clientes en cada visita.</p>
+		</article>
+	</div>
+
+	<hr>
+	<br>
+
+	<section id="mapa">
+		<h2>Ubicanos</h2>
+
+		<br>
+
+		<div id="mapa-contenido">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.6594109728962!2d-77.04738099999994!3d-12.066938899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8e7a8555555%3A0x9c20cb5457697ebb!2sLa%20Rambla%20-%20Brasil!5e0!3m2!1ses-419!2spe!4v1713541256053!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</section>
+
+	<br>
+
+	<section id="diferenciales">
+		<h2>Nuestros Productos</h2>
+		<div id="difVideoYT">
+			<iframe width="720px" height="480px" src="https://www.youtube.com/embed/ARHXAj-n18Q?si=wDvGsMQWY47u4p8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</div>
+	</section>
+</main>
+<footer>
+	Autor: Moises Anderson Garcia Hidalgo
+</footer>
 </body>
 </html>

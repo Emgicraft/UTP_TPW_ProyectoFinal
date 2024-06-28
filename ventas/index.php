@@ -7,7 +7,9 @@
 </head>
 <body>
 	<h1>Ventas</h1>
+
 	<br>
-	<a href="..\">Retornar</a>
+	
+	<a href="..">Retornar</a>
 </body>
 </html>

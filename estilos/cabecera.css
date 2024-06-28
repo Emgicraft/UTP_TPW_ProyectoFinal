@@ -1,8 +1,8 @@
-header {
+/*header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
+}*/
 
 header > img {
     width: 100px;
@@ -10,4 +10,34 @@ header > img {
 
 nav {
     display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f0f8ff;
+    font-size: 28px;
+    flex-grow: 1;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background: linear-gradient(to bottom right, rgb(201, 0, 0), rgb(255, 27, 27));
+    color: #f0f8ff;
+    position: sticky;
+    top: 0;
+}
+
+header i {
+    margin: 0 10px;
+}
+
+hr {
+    margin: 0;
 }
