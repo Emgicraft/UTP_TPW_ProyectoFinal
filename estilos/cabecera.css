@@ -4,6 +4,17 @@
     align-items: center;
 }*/
 
+header {
+    background: linear-gradient(to bottom right, #c90000, #ff1b1b);
+    color: #f0f8ff;
+    position: sticky;
+    top: 0;
+}
+
+header i {
+    margin: 0 10px;
+}
+
 header > img {
     width: 100px;
 }
@@ -16,28 +27,25 @@ nav a {
     text-decoration: none;
     color: #f0f8ff;
     font-size: 28px;
-    flex-grow: 1;
+    flex-grow: 1; /*Mismo espacio restante entre todos, como: 1fr del grid*/
 }
 
-h1 {
+header > h1 {
     margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-header {
-    background: linear-gradient(to bottom right, rgb(201, 0, 0), rgb(255, 27, 27));
-    color: #f0f8ff;
-    position: sticky;
-    top: 0;
-}
-
-header i {
-    margin: 0 10px;
+    text-align: center;
 }
 
 hr {
     margin: 0;
+}
+
+.contenedor__enlaces {
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 5px;
+    transition: all 1s;
+}
+
+.contenedor__enlaces:hover {
+    background-color: #960000;
 }
